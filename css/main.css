@@ -320,6 +320,8 @@ body .wrapper .main-page {
 .cases .cases__container .cases__inner .cases__slider .cases__item .cases__about .cases__btns:hover, .onlineCourses .onlineCourses__container .onlineCourses__inner .onlineCourses__slider .onlineCourses__item .onlineCourses__about .onlineCourses__btn:hover, .handsOn .handsOn__container .handsOn__inner .handsOn__slider .handsOn__slider-item .handsOn__btns .handsOn__btn2:hover, .programs .programs__container .programs__inner .programs__slider .programs__item .programs__about .programs__btn:hover {
   background: #5263ff;
   color: #fff;
+  border: none;
+  transition: 0.3s;
 }
 .cases .cases__container .cases__inner .cases__slider .cases__item .cases__about .cases__btns:hover span::before, .onlineCourses .onlineCourses__container .onlineCourses__inner .onlineCourses__slider .onlineCourses__item .onlineCourses__about .onlineCourses__btn:hover span::before, .handsOn .handsOn__container .handsOn__inner .handsOn__slider .handsOn__slider-item .handsOn__btns .handsOn__btn2:hover span::before, .programs .programs__container .programs__inner .programs__slider .programs__item .programs__about .programs__btn:hover span::before {
   content: url("../images/dot.svg");
@@ -336,6 +338,7 @@ body .wrapper .main-page {
   border: 1px solid #fff;
   background: none;
   color: #fff;
+  transition: 0.3s;
 }
 
 .level .level__container .level__inner .level__info .level__list .level__btns .level__btn2, .primary .primary__container .primary__inner .primary__btns .primary__btn2 {
@@ -348,6 +351,8 @@ body .wrapper .main-page {
 .level .level__container .level__inner .level__info .level__list .level__btns .level__btn2:hover, .primary .primary__container .primary__inner .primary__btns .primary__btn2:hover {
   background: #394acb;
   color: #fff;
+  transition: 0.3s;
+  border: none;
 }
 
 /* Arrows */
@@ -399,6 +404,7 @@ body .wrapper .main-page {
 }
 .header .header__container .header__nav .menu-list .menu-item .menu-link:hover {
   color: #394acb;
+  transition: 0.3s;
 }
 .header .header__container .header__nav img {
   position: absolute;
@@ -427,6 +433,9 @@ body .wrapper .main-page {
 }
 .header .header__container .header__burgerIcon span:nth-of-type(3) {
   top: calc(50% + 7px);
+}
+.header .header__container .header__burgerIcon.active {
+  right: 25px;
 }
 .header .header__container .header__burgerIcon.active span:nth-of-type(1) {
   display: none;
@@ -1271,6 +1280,9 @@ body .wrapper .main-page {
     bottom: 0;
     right: 0;
     width: 100%;
+    width: auto;
+    min-height: 100vh;
+    min-width: 100%;
   }
   .header .header__container .header__mobileNav .header__mobileWrapper {
     position: relative;
@@ -1440,13 +1452,16 @@ body .wrapper .main-page {
   }
   .footer .footer__container .footer__inner .footer__info {
     border-radius: 15px 15px 0 0;
-    padding: 125px 20px 40px;
+    padding: 125px 20px 20px;
     display: grid;
   }
   .footer .footer__container .footer__inner .footer__info .info__caption {
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 20px;
+  }
+  .footer .footer__container .footer__inner .footer__info .footer__nav-menu .footer__menu-list {
+    margin-bottom: 0;
   }
   .footer .footer__container .footer__inner .footer__info .footer__nav-menu .language-switch {
     border-radius: 100px;
@@ -1460,7 +1475,7 @@ body .wrapper .main-page {
     margin-bottom: 80px;
   }
   .footer .footer__container .footer__inner .footer__address {
-    padding: 40px 20px;
+    padding: 20px;
     border-radius: 0;
     display: grid;
   }
@@ -1852,6 +1867,7 @@ body .wrapper .main-page {
   }
   .feedback__container .feedback__inner .feedback__slider .feedback__item .feedback__info .feedback__text {
     line-height: 16px;
+    font-size: 12px;
   }
   .feedback__container .feedback__inner .feedback__slider .feedback__item .feedback__quote span {
     font-size: 40px;
@@ -1904,6 +1920,7 @@ body .wrapper .main-page {
   }
   .onlineCourses .onlineCourses__container .onlineCourses__inner .onlineCourses__slider .onlineCourses__item .onlineCourses__about .onlineCourses__text {
     line-height: 18px;
+    font-size: 12px;
     margin-bottom: 25px;
   }
   .onlineCourses .onlineCourses__container .onlineCourses__inner .onlineCourses__slider .onlineCourses__item .onlineCourses__about .onlineCourses__prise {
@@ -1922,7 +1939,7 @@ body .wrapper .main-page {
     margin-top: 5px;
   }
   .cases .cases__container .cases__inner {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 20px;
     padding: 60px 0 100px 20px;
   }
   .cases .cases__container .cases__inner .cases__title {
@@ -1963,6 +1980,7 @@ body .wrapper .main-page {
   }
   .cases .cases__container .cases__inner .cases__slider .cases__item .cases__about .cases__text {
     line-height: 18px;
+    font-size: 12px;
   }
   .cases .cases__container .cases__inner .cases__slider .cases__item .cases__about .cases__date {
     margin-bottom: 40px;
